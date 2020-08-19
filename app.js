@@ -7,7 +7,29 @@ app.use(parser.json())
 
 
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/api/user/login', (req, res) =>{
+    //console.log(req.params);
+
+const data = [{name:"jimmy"}]
+
+res.status(200).send(data)
+}
+
+
+)
+
+
+
+app.get('/api/user/signup', (req, res) =>{
+    //console.log(req.params);
+
+const data = [{name:"jimmy"}]
+
+res.status(200).send(data)
+}
+
+
+)
 
 
 
